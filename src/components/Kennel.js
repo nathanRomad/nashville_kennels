@@ -17,7 +17,7 @@ export const Kennel = () => {
         },
         "catchphrase": "Loving care when you're not there!"
     }
-
+    
     return <>
         <h2>{kennel.name}</h2>
         <small>{kennel.catchphrase}</small>
@@ -26,6 +26,8 @@ export const Kennel = () => {
             <div>Visit Us at the {kennel.location.name} Location</div>
             <div>{kennel.location.address}</div>
         </address>
+        
+        {/* <PropsAndState yourName="Brenda" /> */}
 
         <h2>Animals</h2>
         <article className="animals">

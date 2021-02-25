@@ -1,0 +1,59 @@
+{
+    "animals": [
+        {
+            "id": 1,
+            "name": "Doodles",
+            "breed": "Poodle",
+            "customerId": 1,
+            "locationId": 2
+        },
+        {
+          "id": 2,
+          "name": "Kelvin",
+          "breed": "Bulldog",
+          "customerId": 3,
+          "locationId": 2
+        },
+        {
+          "name": "Midnight",
+          "breed": "Bulldog",
+          "locationId": 2,
+          "customerId": 3,
+          "id": 3
+        },
+        {
+          "name": "Chowder",
+          "breed": "Pomeranian",
+          "locationId": 1,
+          "customerId": 3,
+          "id": 4
+        },
+        {
+          "name": "Nimbus",
+          "breed": "Bulldog",
+          "locationId": 1,
+          "customerId": 3,
+          "id": 5
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "Hannah Hall",
+            "address": "7002 Chestnut Ct"
+        }
+    ],
+    "employees": [],
+    "locations": [
+        {
+            "id": 1,
+            "name": "Nashville North",
+            "address": "8422 Johnson Pike"
+        },
+        {
+            "id": 2,
+            "name": "Nashville South",
+            "address": "209 Emory Drive"
+        }
+    ]
+}
