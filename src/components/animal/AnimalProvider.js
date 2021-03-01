@@ -6,6 +6,7 @@ export const AnimalContext = createContext()
 // This component establishes what data can be used.
 export const AnimalProvider = (props) => {
     const [animals, setAnimals] = useState([])
+    // console.log('setAnimals: ', setAnimals);
 
     const getAnimals = () => {
         return fetch("http://localhost:8088/animals?_expand=location")
@@ -23,7 +24,6 @@ export const AnimalProvider = (props) => {
         })
         .then(getAnimals)
     }
-
     /*
         You return a context provider which has the
         `animals` state, `getAnimals` function,
