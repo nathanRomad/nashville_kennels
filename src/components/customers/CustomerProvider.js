@@ -26,7 +26,7 @@ export const CustomerProvider = (props) => {
   
     return (
         <CustomerContext.Provider value={{
-            cusotmers, getCustomers, addCustomer
+            customers, getCustomers, addCustomer
         }}>
             {props.children}
         </CustomerContext.Provider>
