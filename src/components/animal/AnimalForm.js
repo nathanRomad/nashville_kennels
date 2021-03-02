@@ -9,13 +9,10 @@ export const AnimalForm = () => {
     const { addAnimal } = useContext(AnimalContext);
     const { locations, getLocations } = useContext(LocationContext);
     const { customers, getCustomers } = useContext(CustomerContext);
-
     /*
     With React, we do not target the DOM with `document.querySelector()`. Instead, our return (render) reacts to state or props.
-
     Define the intial state of the form inputs with useState()
     */
-
     const [animal, setAnimal] = useState({
       name: "",
       breed: "",
@@ -54,7 +51,7 @@ export const AnimalForm = () => {
     }
 
     const handleClickSaveAnimal = (event) => {
-      event.preventDefault() //Prevents the browser from submitting the form
+      event.preventDefault() //Prevents the browser from submitting the form // default re-directs away from single page
 
       const locationId = animal.locationId
       const customerId = animal.customerId
