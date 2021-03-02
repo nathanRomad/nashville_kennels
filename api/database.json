@@ -48,6 +48,13 @@
       "breed": "robotDog_v2.0",
       "customerId": 4,
       "locationId": 2
+    },
+    {
+      "name": "Mitzi",
+      "breed": "Boston Terrier",
+      "locationId": 2,
+      "customerId": 1,
+      "id": 8
     }
   ],
   "customers": [
