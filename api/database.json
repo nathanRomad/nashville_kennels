@@ -85,6 +85,11 @@
       "address": "1 Wall Street Court",
       "email": "",
       "password": ""
+    },
+    {
+      "email": "art@epicmustache.com",
+      "name": "Salvador Dali",
+      "id": 5
     }
   ],
   "employees": [
