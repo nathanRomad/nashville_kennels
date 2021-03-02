@@ -1,59 +1,137 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "customerId": 1,
-            "locationId": 2
-        },
-        {
-          "id": 2,
-          "name": "Kelvin",
-          "breed": "Bulldog",
-          "customerId": 3,
-          "locationId": 2
-        },
-        {
-          "name": "Midnight",
-          "breed": "Bulldog",
-          "locationId": 2,
-          "customerId": 3,
-          "id": 3
-        },
-        {
-          "name": "Chowder",
-          "breed": "Pomeranian",
-          "locationId": 1,
-          "customerId": 3,
-          "id": 4
-        },
-        {
-          "name": "Nimbus",
-          "breed": "Bulldog",
-          "locationId": 1,
-          "customerId": 3,
-          "id": 5
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        }
-    ],
-    "employees": [],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Nanook",
+      "breed": "Siberian Husky",
+      "customerId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Frank",
+      "breed": "Brown Tabby",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Dean",
+      "breed": "Brown Tabby",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Gator",
+      "breed": "German Shepherd",
+      "customerId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 5,
+      "name": "Rubber Duckie",
+      "breed": "Rubber Duck",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 6,
+      "name": "Mighty",
+      "breed": "Labradoodle",
+      "customerId": 3,
+      "locationId": 2
+    },
+    {
+      "id": 7,
+      "name": "Robo-dog",
+      "breed": "robotDog_v2.0",
+      "customerId": 4,
+      "locationId": 2
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Nathan Hamilton",
+      "address": "0101 Hacker Ct"
+    },
+    {
+      "id": 2,
+      "name": "Alexa Klein",
+      "address": "1 Babes Way"
+    },
+    {
+      "id": 3,
+      "name": "Elliot Alderson",
+      "address": "001 Mr. Robot Drive"
+    },
+    {
+      "id": 4,
+      "name": "Neo",
+      "address": "2 Matrix Lane"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Charles Schulz",
+      "position": "CEO",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Cesar Millan",
+      "position": "Dog Whisperer",
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Snoop Dogg",
+      "position": "Director of Marketing & Social Media",
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Jackson Galaxy",
+      "position": "Cat Whisperer",
+      "locationId": 1
+    },
+    {
+      "id": 5,
+      "name": "Orlando Bloom",
+      "position": "CEO",
+      "locationId": 2
+    },
+    {
+      "id": 6,
+      "name": "Victoria Stillwell",
+      "position": "Dog Whisperer",
+      "locationId": 2
+    },
+    {
+      "id": 7,
+      "name": "Gary Fleck",
+      "position": "Director of Marketing & Social Media",
+      "locationId": 2
+    },
+    {
+      "id": 8,
+      "name": "Harlan Pepper",
+      "position": "Cat Whisperer",
+      "locationId": 2
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }
