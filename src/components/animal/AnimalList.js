@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react"
+import { useHistory } from "react-router-dom" // import from libraries before your local modules
 import { AnimalContext } from "./AnimalProvider"
 import { LocationContext } from "../locations/LocationsProvider"
 import { CustomerContext } from "../customers/CustomerProvider"
@@ -10,6 +11,8 @@ export const AnimalList = () => {
   const { animals, getAnimals } = useContext(AnimalContext)
   const { locations, getLocations } = useContext(LocationContext)
   const { customers, getCustomers } = useContext(CustomerContext)
+
+  const history = useHistory()
 
   //useEffect - reach out to the world for animals API fetch call
   useEffect(() => {
@@ -23,7 +26,9 @@ export const AnimalList = () => {
 
   return (
     <div className="animals">
-      {console.log("AnimalList: Render", animals)}
+      <button onClick={() => {history.push("/animals/create")}}>
+            Add Animal
+          </button>
       {
         animals.map(animal => {
           const owner = customers.find(c => c.id === animal.customerId)
