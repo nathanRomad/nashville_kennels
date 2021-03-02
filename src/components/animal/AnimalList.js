@@ -26,7 +26,7 @@ export const AnimalList = () => {
 
   return (
     <div className="animals">
-      <button onClick={() => {history.push("/animals/create")}}>
+      <button name="addAnimals__button" variant="outline-primary" onClick={() => {history.push("/animals/create")}}>
             Add Animal
           </button>
       {
