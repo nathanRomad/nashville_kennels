@@ -61,22 +61,30 @@
     {
       "id": 1,
       "name": "Nathan Hamilton",
-      "address": "0101 Hacker Ct"
+      "address": "0101 Hacker Ct",
+      "email": "",
+      "password": ""
     },
     {
       "id": 2,
       "name": "Alexa Klein",
-      "address": "1 Babes Way"
+      "address": "1 Babes Way",
+      "email": "",
+      "password": ""
     },
     {
       "id": 3,
       "name": "Elliot Alderson",
-      "address": "001 Mr. Robot Drive"
+      "address": "001 Mr. Robot Drive",
+      "email": "",
+      "password": ""
     },
     {
       "id": 4,
       "name": "Neo",
-      "address": "1 Wall Street Court"
+      "address": "1 Wall Street Court",
+      "email": "",
+      "password": ""
     }
   ],
   "employees": [
