@@ -25,20 +25,23 @@ export const AnimalList = () => {
   // Re-render can invoke useEffect (depending on the dependency array values). This would result in an infinate loop.
 
   return (
-    <div className="animals">
+    <>
+      <h2>Animals</h2>
       <button name="addAnimals__button" variant="outline-primary" onClick={() => {history.push("/animals/create")}}>
-            Add Animal
-          </button>
-      {
-        animals.map(animal => {
-          const owner = customers.find(c => c.id === animal.customerId)
-          const clinic = locations.find(l => l.id === animal.locationId)
-          return <AnimalCard key={animal.id}
-            location={clinic}
-            customer={owner}
-            animal={animal} />
-        })
-      }
-    </div>
+              Add Animal
+            </button>
+      <div className="animals">
+        {
+          animals.map(animal => {
+            const owner = customers.find(c => c.id === animal.customerId)
+            const clinic = locations.find(l => l.id === animal.locationId)
+            return <AnimalCard key={animal.id}
+              location={clinic}
+              customer={owner}
+              animal={animal} />
+          })
+        }
+      </div>
+    </>
   )
 }
