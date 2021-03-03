@@ -28,6 +28,8 @@ export const AnimalList = () => {
   return (
     <>
         <button onClick={() => {history.push("/animals/create")}}>
+      <h2>Animals</h2>
+      <button name="addAnimals__button" variant="outline-primary" onClick={() => {history.push("/animals/create")}}>
               Add Animal
             </button>
       <div className="animals">
