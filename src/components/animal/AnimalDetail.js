@@ -6,11 +6,11 @@ import "./Animal.css"
 export const AnimalDetail = () => {
   const { getAnimalById, releaseAnimal } = useContext(AnimalContext)
 
-	const [animal, setAnimal] = useState({})
+  const [animal, setAnimal] = useState({})
   // console.log('animal: ', animal);
 
-	const {animalId} = useParams();
-	const history = useHistory();
+  const { animalId } = useParams();
+  const history = useHistory();
 
   const handleRelease = () => {
     releaseAnimal(animal.id)
@@ -22,10 +22,10 @@ export const AnimalDetail = () => {
   useEffect(() => {
     console.log("useEffect", animalId)
     getAnimalById(animalId)
-    .then((response) => {
-      setAnimal(response)
-    })
-    }, [])
+      .then((response) => {
+        setAnimal(response)
+      })
+  }, [])
 
   return (
     <section className="animal">
@@ -35,6 +35,9 @@ export const AnimalDetail = () => {
       <div className="animal__location">Location: {animal.location?.name}</div>
       <div className="animal__owner">Customer: {animal.customer?.name}</div>
       <button onClick={handleRelease}>Release Animal</button>
+      <button onClick={() => {
+        history.push(`/animals/edit/${animal.id}`)
+      }}>Edit</button>
     </section>
   )
 }
