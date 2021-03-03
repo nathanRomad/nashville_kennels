@@ -8,6 +8,5 @@ export const HomeCard = ({ }) => (
             <div>Visit Us at the Nashville North Location</div>
             <div>500 Puppy Way</div>
         </address>
-)
     </section>
 )
