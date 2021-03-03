@@ -3,6 +3,11 @@ import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalProvider } from "./animal/AnimalProvider";
 import { AnimalList } from "./animal/AnimalList"
+<<<<<<< Updated upstream
+=======
+import { AnimalForm } from "./animal/AnimalForm"
+import { AnimalDetail } from "./animal/AnimalDetail"
+>>>>>>> Stashed changes
 import { CustomerList } from "./customers/CustomerList"
 import { CustomerProvider } from "./customers/CustomerProvider"
 import { LocationList } from "./locations/LocationsList"
@@ -26,6 +31,15 @@ export const ApplicationViews = () => {
                         <Route exact path="/animals">
                             <AnimalList />
                         </Route>
+<<<<<<< Updated upstream
+=======
+                        <Route path="/animals/create">
+                            <AnimalForm />
+                        </Route>
+                        <Route exact path="/animals/detail/:animalId(\d+)">
+		                    <AnimalDetail />
+	                    </Route>
+>>>>>>> Stashed changes
                     </LocationsProvider>
                 </CustomerProvider>
             </AnimalProvider>
