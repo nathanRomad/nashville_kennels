@@ -50,11 +50,11 @@
       "locationId": 2
     },
     {
-      "name": "Mitzi",
+      "id": 8,
+      "name": "Mitzi 4",
       "breed": "Boston Terrier",
       "locationId": 2,
-      "customerId": 1,
-      "id": 8
+      "customerId": 1
     }
   ],
   "customers": [
