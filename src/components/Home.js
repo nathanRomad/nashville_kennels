@@ -1,6 +1,4 @@
 import React from "react";
-import { PropsAndState } from './PropsAndState'
-
 export const HomeCard = ({ }) => (
     <section className="home">
         <h2>Nashville Kennels</h2>
@@ -10,6 +8,7 @@ export const HomeCard = ({ }) => (
             <div>Visit Us at the Nashville North Location</div>
             <div>500 Puppy Way</div>
         </address>
+    </>
+)
     </section>
 )
-{/* <div style="background-image: url(./auth/logo.png);"></div> */}

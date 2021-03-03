@@ -12,6 +12,7 @@ export const AnimalList = () => {
   const { locations, getLocations } = useContext(LocationContext)
   const { customers, getCustomers } = useContext(CustomerContext)
 
+  // The useHistory hook let's us tell React which route we want to visit. We will use it to tell React to render the animal form component.
   const history = useHistory()
 
   //useEffect - reach out to the world for animals API fetch call
@@ -26,6 +27,7 @@ export const AnimalList = () => {
 
   return (
     <>
+        <button onClick={() => {history.push("/animals/create")}}>
       <h2>Animals</h2>
       <button name="addAnimals__button" variant="outline-primary" onClick={() => {history.push("/animals/create")}}>
               Add Animal

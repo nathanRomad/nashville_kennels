@@ -4,6 +4,7 @@ import { HomeCard } from "./Home"
 import { AnimalProvider } from "./animal/AnimalProvider";
 import { AnimalList } from "./animal/AnimalList"
 import { AnimalForm } from "./animal/AnimalForm"
+import { AnimalDetail } from "./animal/AnimalDetail"
 import { CustomerList } from "./customers/CustomerList"
 import { CustomerProvider } from "./customers/CustomerProvider"
 import { LocationList } from "./locations/LocationsList"
@@ -27,9 +28,12 @@ export const ApplicationViews = () => {
                         <Route exact path="/animals">
                             <AnimalList />
                         </Route>
-                        <Route path="/animals/create">
+                         <Route path="/animals/create">
                             <AnimalForm />
                         </Route>
+                        <Route exact path="/animals/detail/:animalId(\d+)">
+		                        <AnimalDetail />
+	                      </Route>
                     </LocationsProvider>
                 </CustomerProvider>
             </AnimalProvider>
