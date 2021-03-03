@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
 import "./Animal.css"
 
 export const AnimalCard = ({ animal, customer, location }) => (
