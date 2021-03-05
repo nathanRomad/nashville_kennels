@@ -1,4 +1,5 @@
 import React from "react";
+
 export const HomeCard = ({ }) => (
     <section className="home">
         <h2>Nashville Kennels</h2>

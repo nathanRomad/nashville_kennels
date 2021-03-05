@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { HomeCard } from "./Home"
 import { AnimalProvider } from "./animal/AnimalProvider";
 import { AnimalList } from "./animal/AnimalList"
+import { AnimalSearch } from "./animal/AnimalSearch";
 import { AnimalForm } from "./animal/AnimalForm"
 import { AnimalDetail } from "./animal/AnimalDetail"
 import { CustomerList } from "./customers/CustomerList"
@@ -26,6 +27,7 @@ export const ApplicationViews = () => {
                 <CustomerProvider>
                     <LocationsProvider>
                         <Route exact path="/animals">
+                            <AnimalSearch />
                             <AnimalList />
                         </Route>
                         <Route path="/animals/create">
